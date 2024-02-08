@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **anshsinghal1907@gmail.com**
 
-- ⚡ Fun fact **I think people shouldn't stay awake till late**
+- ⚡ Fun fact **I think people shouldn't stay awake till late (4:00 am)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
