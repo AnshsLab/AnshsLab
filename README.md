@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Ansh Singhal</h1>
 <h3 align="center">A passionate developer from India</h3>
- <img align="left" src=https://64.media.tumblr.com/117d642462065edfe98a54bc28cb4412/tumblr_oi3dnvClwS1sipm1io1_500.gifv>
+ <img align="right" src=https://64.media.tumblr.com/117d642462065edfe98a54bc28cb4412/tumblr_oi3dnvClwS1sipm1io1_500.gifv>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=anshs-lab&label=Profile%20views&color=000000&style=plastic" alt="anshs-lab" /> </p>
 
 - 🌱 I’m currently learning **react**
