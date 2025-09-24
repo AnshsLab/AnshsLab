@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on finding internships<br>👯 I’m looking to collaborate on open-source projects, hackathons, and anything related to web/game development.<br>🤝 I’m looking for help with getting an internship perhaps <br>🌱 I’m currently learning C++ DSA, Linux scripting, and building scalable backend systems.<br>💬 Ask me about game development, hackathon planning, or how to get started with coding in C++.<br>⚡ Fun fact: I once broke my entire Linux system just to reinstall it for fun - twice. 😆
+🔭 I’m currently working on finding internships<br>👯 I’m looking to collaborate on open-source projects, hackathons, and anything related to web/game development.<br>🤝 I’m looking for help with getting an internship  <br>🌱 I’m currently learning C++ DSA, Linux scripting, and building scalable backend systems.<br>💬 Ask me about game development, hackathon planning, or how to get started with coding in C++.<br>⚡ Fun fact: I once broke my entire Linux system just to reinstall it for fun - twice. 😆
 <img align="right" src=https://64.media.tumblr.com/117d642462065edfe98a54bc28cb4412/tumblr_oi3dnvClwS1sipm1io1_500.gifv>
 
 ## 🌐 Socials:
