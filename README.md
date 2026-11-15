@@ -1,27 +1,101 @@
-# 💫 About Me:
-🔭 I’m currently working on finding internships<br>👯 I’m looking to collaborate on open-source projects, hackathons, and anything related to web/game development.<br>🤝 I’m looking for help with getting an internship  <br>🌱 I’m currently learning C++ DSA, Linux scripting, and building scalable backend systems.<br>💬 Ask me about game development, hackathon planning, or how to get started with coding in C++.<br>⚡ Fun fact: I once broke my entire Linux system just to reinstall it for fun - twice. 😆
-<img align="right" src=https://64.media.tumblr.com/117d642462065edfe98a54bc28cb4412/tumblr_oi3dnvClwS1sipm1io1_500.gifv>
+<div align="center">
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ansh-singhal01) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/23148876) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anshsinghal1907@gmail.com)
+<a href="https://github.com/AnshsLab">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1200&color=E07A3F&center=true&vCenter=true&width=640&lines=Hi%2C+I%27m+Ansh+%F0%9F%8D%82;Open+source+contributor+%40+KDE;GSoC+2026%3A+building+join.kde.org;Open+source+%C2%B7+DSA+%C2%B7+Linux" alt="Typing intro" />
+</a>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Gimp](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=AnshsLab&theme=dracula&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=AnshsLab&theme=dracula&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AnshsLab&theme=dracula&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+🍂 &nbsp; 🍁 &nbsp; 🍂
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=AnshsLab&theme=dracula&no-frame=false&no-bg=false&margin-w=4)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-6B4226?style=for-the-badge&logo=linkedin&logoColor=F2E3C6)](https://linkedin.com/in/ansh-singhal01)
+[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-8A5A2B?style=for-the-badge&logo=stackoverflow&logoColor=F2E3C6)](https://stackoverflow.com/users/23148876)
+[![KDE Invent](https://img.shields.io/badge/KDE_Invent-A0522D?style=for-the-badge&logo=kde&logoColor=F2E3C6)](https://invent.kde.org/anshs-lab)
+[![Email](https://img.shields.io/badge/Email-B7652E?style=for-the-badge&logo=gmail&logoColor=F2E3C6)](mailto:anshsinghal1907@gmail.com)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=AnshsLab&limit=5&theme=dark&combine_all_yearly_contributions=true)
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=AnshsLab&icon=2&color=4)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🍂 About Me
+
+- 🔭 Open to opportunities
+- 🍁 Did **Google Summer of Code 2026** with **[KDE](https://invent.kde.org/anshs-lab)** and am now organising **Season of KDE 2027**
+- 🌱 Learning C++ DSA, Linux scripting and scalable backend systems
+- 👯 Open to collaborating on open source, hackathons and anything web or game dev
+- 💬 Ask me about game dev, hackathon planning, or getting started with C++
+- ⚡ Fun fact: I once broke my entire Linux system just to reinstall it for fun. Twice. 😆
+
+---
+
+## 🍁 Tech Stack
+
+**Languages**
+
+![C](https://img.shields.io/badge/C-6B4226?style=for-the-badge&logo=c&logoColor=F2E3C6)
+![C++](https://img.shields.io/badge/C%2B%2B-6B4226?style=for-the-badge&logo=cplusplus&logoColor=F2E3C6)
+![C#](https://img.shields.io/badge/C%23-6B4226?style=for-the-badge&logo=csharp&logoColor=F2E3C6)
+![Java](https://img.shields.io/badge/Java-6B4226?style=for-the-badge&logo=openjdk&logoColor=F2E3C6)
+![Kotlin](https://img.shields.io/badge/Kotlin-6B4226?style=for-the-badge&logo=kotlin&logoColor=F2E3C6)
+![Python](https://img.shields.io/badge/Python-6B4226?style=for-the-badge&logo=python&logoColor=F2E3C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-6B4226?style=for-the-badge&logo=javascript&logoColor=F2E3C6)
+![PHP](https://img.shields.io/badge/PHP-6B4226?style=for-the-badge&logo=php&logoColor=F2E3C6)
+![R](https://img.shields.io/badge/R-6B4226?style=for-the-badge&logo=r&logoColor=F2E3C6)
+
+**Web and Data**
+
+![HTML5](https://img.shields.io/badge/HTML5-8A5A2B?style=for-the-badge&logo=html5&logoColor=F2E3C6)
+![CSS3](https://img.shields.io/badge/CSS3-8A5A2B?style=for-the-badge&logo=css3&logoColor=F2E3C6)
+![React](https://img.shields.io/badge/React-8A5A2B?style=for-the-badge&logo=react&logoColor=F2E3C6)
+![React Native](https://img.shields.io/badge/React_Native-8A5A2B?style=for-the-badge&logo=react&logoColor=F2E3C6)
+![React Query](https://img.shields.io/badge/React_Query-8A5A2B?style=for-the-badge&logo=reactquery&logoColor=F2E3C6)
+![MySQL](https://img.shields.io/badge/MySQL-8A5A2B?style=for-the-badge&logo=mysql&logoColor=F2E3C6)
+
+**Design**
+
+![Figma](https://img.shields.io/badge/Figma-A0522D?style=for-the-badge&logo=figma&logoColor=F2E3C6)
+![GIMP](https://img.shields.io/badge/GIMP-A0522D?style=for-the-badge&logo=gimp&logoColor=F2E3C6)
+![Canva](https://img.shields.io/badge/Canva-A0522D?style=for-the-badge&logo=canva&logoColor=F2E3C6)
+
+---
+
+## 🌰 Open Source Contribution
+
+🍁 **Google Summer of Code 2026 with KDE:** built **[join.kde.org](https://join.kde.org)** from scratch as the onboarding and entry point into the KDE contributor environment.
+
+🍂 **Season of KDE 2027:** currently organising it. [Learn more](https://mentorship.kde.org/sok/)
+
+<p align="center">
+  <a href="https://invent.kde.org/anshs-lab">
+    <img src="https://img.shields.io/badge/See_my_work_on_KDE_Invent_%E2%86%92-A0522D?style=for-the-badge&logo=kde&logoColor=F2E3C6" alt="KDE Invent" />
+  </a>
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=AnshsLab&show_icons=true&include_all_commits=true&count_private=true&title_color=E07A3F&text_color=F2E3C6&icon_color=D9A441&bg_color=2E211A&border_color=5A3E2B" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnshsLab&layout=compact&title_color=E07A3F&text_color=F2E3C6&bg_color=2E211A&border_color=5A3E2B" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=AnshsLab&background=2E211A&border=5A3E2B&stroke=5A3E2B&ring=D9A441&fire=E07A3F&currStreakNum=F2E3C6&sideNums=F2E3C6&currStreakLabel=D9A441&sideLabels=D9A441&dates=B89B7A" alt="GitHub streak" />
+</p>
+
+## 🏆 Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AnshsLab&theme=gruvbox&no-frame=true&margin-w=6&column=7" alt="GitHub trophies" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox" alt="Random dev quote" />
+</p>
+
+<p align="center">
+  <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=AnshsLab&icon=2&color=4" alt="Visitor count" /></a>
+</p>
+
+<p align="center">🍂 &nbsp; 🍁 &nbsp; 🍂</p>
