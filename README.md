@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/banner.png" alt="Autumn banner" width="100%" />
+</p>
+
 <div align="center">
 
 <a href="https://github.com/AnshsLab">
@@ -74,12 +78,12 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=AnshsLab&show_icons=true&include_all_commits=true&count_private=true&title_color=E07A3F&text_color=F2E3C6&icon_color=D9A441&bg_color=2E211A&border_color=5A3E2B" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnshsLab&layout=compact&title_color=E07A3F&text_color=F2E3C6&bg_color=2E211A&border_color=5A3E2B" alt="Top languages" />
+  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=AnshsLab&show_icons=true&include_all_commits=true&count_private=true&title_color=E07A3F&text_color=F2E3C6&icon_color=D9A441&bg_color=2E211A&border_color=5A3E2B" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=AnshsLab&layout=compact&title_color=E07A3F&text_color=F2E3C6&bg_color=2E211A&border_color=5A3E2B" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=AnshsLab&background=2E211A&border=5A3E2B&stroke=5A3E2B&ring=D9A441&fire=E07A3F&currStreakNum=F2E3C6&sideNums=F2E3C6&currStreakLabel=D9A441&sideLabels=D9A441&dates=B89B7A" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com/?user=AnshsLab&background=2E211A&border=5A3E2B&stroke=5A3E2B&ring=D9A441&fire=E07A3F&currStreakNum=F2E3C6&sideNums=F2E3C6&currStreakLabel=D9A441&sideLabels=D9A441&dates=B89B7A" alt="GitHub streak" />
 </p>
 
 ## 🏆 Trophies
@@ -95,7 +99,7 @@
 </p>
 
 <p align="center">
-  <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=AnshsLab&icon=2&color=4" alt="Visitor count" /></a>
+  <img src="https://komarev.com/ghpvc/?username=AnshsLab&label=Visitors&color=A0522D&style=for-the-badge" alt="Profile views" />
 </p>
 
 <p align="center">🍂 &nbsp; 🍁 &nbsp; 🍂</p>
