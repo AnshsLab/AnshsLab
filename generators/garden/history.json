@@ -1,0 +1,104 @@
+{
+  "login": "AnshsLab",
+  "through": "2026-11-15",
+  "source": "GitHub public commit contributions",
+  "years": [
+    {
+      "year": 2023,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 0,
+          "repositories": {}
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "seasons": {
+        "winter": {
+          "commits": 12,
+          "repositories": {
+            "AnshsLab/AnshsLab": 6,
+            "AnshsLab/college-finder": 2,
+            "AnshsLab/python-clock": 2,
+            "AnshsLab/python-todo-list": 2
+          }
+        },
+        "spring": {
+          "commits": 8,
+          "repositories": {
+            "AnshsLab/AnshsLab": 8
+          }
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 0,
+          "repositories": {}
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 4,
+          "repositories": {
+            "AnshsLab/AnshsLab": 4
+          }
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 6,
+          "repositories": {
+            "AnshsLab/Blogs": 6
+          }
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 4,
+          "repositories": {
+            "AnshsLab/AnshsLab": 4
+          }
+        }
+      }
+    }
+  ]
+}

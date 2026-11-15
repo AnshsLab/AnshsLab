@@ -79,6 +79,22 @@
 
 ---
 
+## 🌿 The Garden
+
+A **tree of commits**, grown from my public commit contributions across GitHub.
+Each active season-year grows a limb, with the oldest at the roots and the newest in the crown.
+Its foliage follows the seasons, and years without public commits leave knots. It refreshes nightly.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=c7231ec8e71ae100">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=d88da98746f049ed">
+    <img alt="A commit tree with one limb per active season-year" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=c7231ec8e71ae100" width="900">
+  </picture>
+</p>
+
+---
+
 ## 📊 GitHub Stats
 
 <p align="center">
