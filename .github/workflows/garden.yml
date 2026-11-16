@@ -41,26 +41,3 @@ jobs:
             sleep $((attempt * 5))
           done
           exit 1
-
-   - name: Sync tree to KDE Invent
-     env:
-       INVENT_DEPLOY_KEY: ${{ secrets.INVENT_DEPLOY_KEY }}
-     run: |
-       [ -n "$INVENT_DEPLOY_KEY" ] || { echo "no key set, skipping"; exit 0; }
-       mkdir -p ~/.ssh
-       printf '%s\n' "$INVENT_DEPLOY_KEY" > ~/.ssh/invent_deploy
-       chmod 600 ~/.ssh/invent_deploy
-       ssh-keyscan invent.kde.org >> ~/.ssh/known_hosts
-       export GIT_SSH_COMMAND="ssh -i ~/.ssh/invent_deploy -o IdentitiesOnly=yes"
-       git clone git@invent.kde.org:anshs-lab/anshs-lab.git /tmp/invent
-       mkdir -p /tmp/invent/assets/garden
-       cp assets/garden/garden-dark.svg assets/garden/garden-light.svg /tmp/invent/assets/garden/
-       cd /tmp/invent
-       V=$(sha1sum assets/garden/garden-dark.svg | cut -c1-12)
-       sed -i -E "s#(assets/garden/garden-(dark|light)\.svg)(\?v=[0-9a-f]+)?#\1?v=$V#g" README.md
-       git config user.name "github-actions[bot]"
-       git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-       git add assets/garden README.md
-       git diff --cached --quiet && exit 0
-       git commit -m "chore(garden): sync commit tree"
-       git push origin HEAD
