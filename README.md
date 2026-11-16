@@ -2,10 +2,6 @@
   <img src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/banner.png" alt="Autumn banner" width="100%" />
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AnshsLab&label=Visitors&color=A0522D&style=for-the-badge" alt="Profile views" />
-</p>
-
 <div align="center">
 
 <a href="https://github.com/AnshsLab">
