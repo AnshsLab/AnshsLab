@@ -82,9 +82,9 @@ The oldest projects sit at the roots and the newest in the crown. It refreshes n
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=fe469d6ca8d64737">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=85cd3ffb8e7124c1">
-    <img alt="A commit tree where each branch is a project and its leaves are commits" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=fe469d6ca8d64737" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=b9d868968ad30a2e">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=190fbbed24f46676">
+    <img alt="A commit tree where each branch is a project and its leaves are commits" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=b9d868968ad30a2e" width="900">
   </picture>
 </p>
 

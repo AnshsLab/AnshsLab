@@ -164,7 +164,7 @@ def _project_labels(entries: list, theme: Theme, width: float, top: float, botto
             tx = x + (4 if side < 0 else -4)
             parts.append(
                 f'<path d="M{cx:.1f} {cy:.1f}L{tx:.1f} {y - 3.5:.1f}" fill="none" stroke="{theme.muted}" '
-                f'stroke-width=".7" stroke-linecap="round" opacity=".65"/>'
+                f'stroke-width="1.3" stroke-linecap="round" opacity=".95"/>'
                 f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="1.7" fill="{theme.text}" opacity=".85"/>'
             )
             parts.append(text(x, y, label, theme.text, 10, anchor="end" if side < 0 else "start"))
