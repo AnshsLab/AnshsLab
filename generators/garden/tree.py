@@ -1,4 +1,4 @@
-"""Render a commit-history tree with one limb per active season-year."""
+"""Render a commit tree: one limb per project, with seasonal foliage for its commits."""
 
 from __future__ import annotations
 
@@ -16,6 +16,9 @@ BARK = {
     "dark": ("#566079", "#8C9BB5", "#6F7B96"),
     "light": ("#4C566A", "#71829D", "#5E718E"),
 }
+SHOW_LABELS = True  # project names with leader lines
+NAMES: dict[int, str] = {}
+LAST_BOX: list[float] = [0.0] * 7  # min x, max x, min y, max y, sum x, sum y, count of the last foliage
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 
@@ -96,7 +99,7 @@ def _season_growth(
         paths.setdefault(forks, []).append(f"{move}L{end[0]} {end[1]}")
         ends[forks] = end
 
-    title = f"{season} {year}: {count} public commit contributions"
+    title = f"{NAMES.get(year, year)} ({season}): {count} commits"
     parts = [f'<g class="season" data-season="{season}" data-commits="{count}"><title>{esc(title)}</title>']
     thickness = min(girth * .85, 1.3 + 2.4 * ratio)
     for forks, commands in sorted(paths.items()):
@@ -113,6 +116,7 @@ def _season_growth(
     colours = palette[1]
     spread = 1.6 + 2.2 * ratio
     dots: dict[tuple[str, float], list[str]] = {}
+    box = [1e9, -1e9, 1e9, -1e9, 0.0, 0.0, 0.0]
     for x, y, _ in tips:
         tx, ty = transform(x, y)
         for leaf in range(cluster):
@@ -121,8 +125,12 @@ def _season_growth(
                 ly = min(max(ty + rng.gauss(0, spread), top), bottom)
             else:
                 lx, ly = tx, ty
+            box[0], box[1] = min(box[0], lx), max(box[1], lx)
+            box[2], box[3] = min(box[2], ly), max(box[3], ly)
+            box[4], box[5], box[6] = box[4] + lx, box[5] + ly, box[6] + 1
             key = (rng.choice(colours), rng.choice((.8, 1.0, 1.3)))
             dots.setdefault(key, []).append(f"M{lx:.1f} {ly:.1f}h0")
+    LAST_BOX[:] = box
     parts.append('<g class="leaves" filter="url(#glow)">')
     for (colour, weight), points in sorted(dots.items()):
         parts.append(
@@ -130,6 +138,37 @@ def _season_growth(
             f'stroke-linecap="round" opacity=".9"/>'
         )
     parts.append("</g></g>")
+    return "".join(parts)
+
+
+def _project_labels(entries: list, theme: Theme, width: float, top: float, bottom: float) -> str:
+    """Project names in two columns outside the canopy, each tied to its foliage by a leader line."""
+    parts = ['<g class="project-labels">']
+    for side in (-1, 1):
+        column = sorted((e for e in entries if e[0] == side), key=lambda e: e[1][5] / max(e[1][6], 1))
+        if not column:
+            continue
+        edge = min(e[1][0] for e in column) if side < 0 else max(e[1][1] for e in column)
+        x = edge - 26 if side < 0 else edge + 26
+        x = max(120, x) if side < 0 else min(width - 120, x)
+        room = (x - 12) if side < 0 else (width - 12 - x)
+        chars = max(8, int(room / 6.3))
+        previous = top - 15
+        rows = []
+        for _, box, label in column:
+            cy = box[5] / max(box[6], 1)
+            y = min(max(cy, previous + 15), bottom)
+            previous = y
+            rows.append((box[4] / max(box[6], 1), cy, y, label if len(label) <= chars else label[:chars - 1] + "\u2026"))
+        for cx, cy, y, label in rows:
+            tx = x + (4 if side < 0 else -4)
+            parts.append(
+                f'<path d="M{cx:.1f} {cy:.1f}L{tx:.1f} {y - 3.5:.1f}" fill="none" stroke="{theme.muted}" '
+                f'stroke-width=".7" stroke-linecap="round" opacity=".65"/>'
+                f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="1.7" fill="{theme.text}" opacity=".85"/>'
+            )
+            parts.append(text(x, y, label, theme.text, 10, anchor="end" if side < 0 else "start"))
+    parts.append("</g>")
     return "".join(parts)
 
 
@@ -192,6 +231,8 @@ def render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str) 
 
 def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str, detail: float) -> str:
     years = history["years"]
+    NAMES.clear()
+    NAMES.update({y["year"]: y.get("name", str(y["year"])) for y in years})
     totals = validate_history(years, seasons)
     maximum_year = max(totals)
     maximum_season = max(
@@ -206,8 +247,8 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
     rng = random.Random(years[0]["year"])
     title = f"Commit tree for {history['login']}: {summary}"
     description = (
-        "Each active season-year is a limb with seasonal foliage. "
-        "The oldest year is at the roots, the newest at the crown, and empty years are knots. "
+        "Each project is a limb and its commits are the leaves, coloured by season. "
+        "The oldest project is at the roots and the newest at the crown. "
         "Winter starts in the previous December."
     )
     parts = [svg_open(width, height, theme, title), f"<desc>{esc(description)}</desc>"]
@@ -233,7 +274,7 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
         "</style>"
     )
     parts.append(text(28, 33, "A TREE OF COMMITS", theme.text, 20, weight="bold"))
-    parts.append(text(28, 58, "Every active season-year grows a limb, with foliage for its seasons.", theme.muted, 12))
+    parts.append(text(28, 58, "Every project grows a limb. Its commits are the leaves, coloured by season.", theme.muted, 12))
     parts.append(
         f'<path d="M0 {base + 6}Q{width * .175:.1f} {base - 20} {width * .35:.1f} {base - 6}'
         f'T{width * .7:.1f} {base - 2}T{width} {base + 2}V{height}H0Z" '
@@ -288,6 +329,7 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
         if total:
             limbs.append((index, year, total, x, y))
 
+    boxes: dict[int, tuple] = {}
     branches = []
     for order, (index, year, total, x, y) in enumerate(limbs):
         ratio = _ratio(total, maximum_year)
@@ -313,7 +355,7 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
         motion_rng = random.Random(year["year"] * 97)
         duration = 7 + motion_rng.uniform(0, 3)
         delay = motion_rng.uniform(0, duration)
-        label = f"{year['year']} season-year: {total} public commit contributions"
+        label = f"{NAMES.get(year['year'], year['year'])}: {total} commits"
         branch = [
             f'<g class="limb" data-year="{year["year"]}" data-commits="{total}" data-anchor-y="{y:.1f}" '
             f'style="transform-origin:{x:.1f}px {y:.1f}px;animation-duration:{duration:.1f}s;'
@@ -342,6 +384,7 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
                 origin, heading, widths[position], palettes[season], limb_colour,
                 (20, 84, width - 20, base - 12), detail,
             ))
+            boxes[index] = tuple(LAST_BOX)
         branch.append("</g>")
         branches.append("".join(branch))
 
@@ -382,7 +425,7 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
 
     for year, total, x, y in rows:
         if not total:
-            label = f"{year['year']} season-year: no public commit contributions"
+            label = f"{NAMES.get(year['year'], year['year'])}: no commits"
             parts.append(
                 f'<g class="quiet-year" data-year="{year["year"]}" data-commits="0" data-anchor-y="{y:.1f}">'
                 f'<title>{esc(label)}</title><ellipse cx="{x:.1f}" cy="{y:.1f}" rx="2.4" ry="3.6" '
@@ -391,17 +434,22 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
     if not maximum_year:
         parts.append(text(width / 2, 130, "No public commit contributions recorded yet.", theme.muted, 13, anchor="middle"))
 
+    if SHOW_LABELS:
+        parts.append(_project_labels(
+            [(sides[i], boxes[i], f"{NAMES.get(years[i]['year'], '')} \u00b7 {totals[i]}") for i in sorted(boxes)],
+            theme, width, 96, base - 24,
+        ))
     parts.append(_legend(seasons, palettes, theme, base + 34))
     parts.append(text(
         28, base + 68,
-        "Oldest at the roots; newest in the crown. Size reflects activity on a logarithmic scale.",
+        "Oldest project at the roots; newest in the crown. Size reflects commits on a logarithmic scale.",
         theme.muted, 10,
     ))
     through = date.fromisoformat(history["through"])
     through_text = f"{through.day} {MONTHS[through.month - 1]} {through.year}"
     parts.append(text(
         28, base + 86,
-        f"Public commit contributions through {through_text} UTC. Winter begins in the previous December; empty years are knots.",
+        f"Public GitHub commits through {through_text} UTC{history.get('note', '')}. Winter begins in the previous December.",
         theme.muted, 10,
     ))
     parts.append("</svg>")
