@@ -77,14 +77,15 @@
 
 ## 🌿 The Garden
 
-A **tree of commits**: every branch is a project I commit to on GitHub, and its leaves are the commits, coloured by season.
-The oldest projects sit at the roots and the newest in the crown. It refreshes nightly.
+A **tree of commits**, grown from my public commit contributions across GitHub.
+Each active season-year grows a limb, with the oldest at the roots and the newest in the crown.
+Its foliage follows the seasons, and years without public commits leave knots. It refreshes nightly.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=b9d868968ad30a2e">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=190fbbed24f46676">
-    <img alt="A commit tree where each branch is a project and its leaves are commits" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=b9d868968ad30a2e" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=27783a11e7d7eb8d">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=42ddae81d22ccfbc">
+    <img alt="A commit tree with one limb per active season-year" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=27783a11e7d7eb8d" width="900">
   </picture>
 </p>
 

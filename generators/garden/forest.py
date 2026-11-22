@@ -167,46 +167,8 @@ def summary(history: dict) -> str:
     return f"{total:,} public commit contributions | {years[0]['year']}-{years[-1]['year']} season-years"
 
 
-MAX_PROJECTS = 20
-SKIP_PROJECTS: tuple[str, ...] = ()  # full "owner/name" paths (or last names) to leave out of the tree
-
-
-def project_history(history: dict) -> dict:
-    """Re-shape season-year history so every project becomes exactly one limb with one growth."""
-    projects: dict[str, dict] = {}
-    for year in history["years"]:
-        for season, data in year["seasons"].items():
-            order = year["year"] * 4 + SEASONS.index(season)
-            for repo, count in data["repositories"].items():
-                if count <= 0 or repo in SKIP_PROJECTS or repo.rsplit("/", 1)[-1] in SKIP_PROJECTS:
-                    continue
-                item = projects.setdefault(repo, {"first": order, "last": order, "total": 0})
-                item["first"] = min(item["first"], order)
-                item["last"] = max(item["last"], order)
-                item["total"] += count
-    ranked = sorted(projects.items(), key=lambda kv: -kv[1]["total"])
-    kept = sorted(ranked[:MAX_PROJECTS], key=lambda kv: (kv[1]["first"], -kv[1]["total"]))
-    # One growth per project, coloured by the season of its most recent commits.
-    years = [
-        {
-            "year": index + 1,
-            "name": name.rsplit("/", 1)[-1],
-            "seasons": {
-                season: {"commits": item["total"] if SEASONS[item["last"] % 4] == season else 0, "repositories": {}}
-                for season in SEASONS
-            },
-        }
-        for index, (name, item) in enumerate(kept)
-    ] or [{"year": 1, "name": "-", "seasons": {season: {"commits": 0, "repositories": {}} for season in SEASONS}}]
-    hidden = len(ranked) - len(kept)
-    note = f" across {len(ranked)} projects" + (f" ({hidden} smaller not shown)" if hidden else "")
-    total = sum(item["total"] for _, item in ranked)
-    return {"login": history["login"], "through": history["through"], "years": years, "note": note, "total": total}
-
-
 def render(history: dict, theme) -> str:
-    data = project_history(history)
-    return tree.render(data, theme, SEASONS, f"{data['total']:,} commits")
+    return tree.render(history, theme, SEASONS, summary(history))
 
 
 def render_all() -> list[Path]:
