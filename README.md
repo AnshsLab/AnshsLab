@@ -83,9 +83,9 @@ Its foliage follows the seasons, and years without public commits leave knots. I
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=23461a9fd9716ae6">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=fd77253d66ed95ed">
-    <img alt="A commit tree with one limb per active season-year" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=23461a9fd9716ae6" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=481d62b1e280ea61">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-light.svg?v=4451e6527319f347">
+    <img alt="A commit tree with one limb per active season-year" src="https://raw.githubusercontent.com/AnshsLab/AnshsLab/main/assets/garden/garden-dark.svg?v=481d62b1e280ea61" width="900">
   </picture>
 </p>
 
